@@ -7,7 +7,6 @@ provider :
      runtime: nodejs18.x
 
 
-
 functions:
    firstLambda:
       handler: built/index.handler
