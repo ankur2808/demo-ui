@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "build": " tsc -p tsconfig.json",
+    "start": "serverless invoke local -f firstLambda "
+  },
+  "dependencies": {
+    "serverless": "^3.33.0",
+    "serverless-webpack": "^5.11.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "serverless-plugin-typescript": "^2.1.5"
+  }
+}

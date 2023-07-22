@@ -1,0 +1,13 @@
+service : hello
+
+frameworkVersion: '3'
+
+provider :
+     name : aws
+     runtime: nodejs18.x
+
+
+
+functions:
+   firstLambda:
+      handler: built/index.handler

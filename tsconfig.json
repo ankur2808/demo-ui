@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+         "target": "ES5",
+        "noImplicitAny": true,
+        "preserveConstEnums": true,
+        "outDir": "./built",
+        "sourceMap": false
+      }
+}
