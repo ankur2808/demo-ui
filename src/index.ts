@@ -1,6 +1,6 @@
 import { helloWorld } from "./hello/hello";
 
-exports.handler = async (event:any) => {
+export const handler = async () => {
   // TODO implement
   helloWorld();
   const response = {
