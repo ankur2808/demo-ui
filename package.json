@@ -1,16 +1,19 @@
 {
  
-  "main": "src/index.ts",
+  "main": "build/index.js",
+ 
+  "type": "module",
  
   "scripts": {
  
    
-  "build": "webpack",
-
-  "build:local" :"tsc -p tsconfig.json",
+  "build": "tsc -p tsconfig.json && node createArchive.js",
  
    
-  "start": "npm run build:local && serverless invoke local -f firstLambda ",
+  "build:local": "tsc -p tsconfig.json",
+ 
+   
+  "start": "npm run build && serverless invoke local -f firstLambda ",
  
    
   "start:serverless-offline": "serverless  offline -s dev"
@@ -20,7 +23,10 @@
   "devDependencies": {
  
    
-  "serverless": "^2.52.1",
+  "adm-zip": "^0.5.10",
+ 
+   
+  "serverless": "^3.33.0",
  
    
   "serverless-offline": "^7.0.0",
