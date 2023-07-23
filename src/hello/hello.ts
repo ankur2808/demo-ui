@@ -1,3 +1,3 @@
 export const helloWorld=()=>{
-    console.log("hí3333")
+    console.log("ffffffwewrwewr")
 }
